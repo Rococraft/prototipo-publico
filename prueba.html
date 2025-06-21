@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Script</title>
+</head>
+<body>
+    <h1>La colocacion del script importa</h1>
+    <p id="parrafo1">
+        Este es un parrafo que se modificará con Javascript.
+    </p>
+    <p>
+        Este es otro parrafo que no se modificara con Javascript.
+    </p>
+    <p>
+        Este es un tercer parrafo que tampoco se modificara con Javascript.
+    </p>
+    <script>
+        document.getElementById("parrafo1").style.color = "red";
+
+        var s;
+        var nombres = ["Juan", "Ana", "Pedro", "María"];
+        for(s = 0; s < nombres.length; s++) {
+            alert("Hola "+nombres[s]+". Este es un mensaje de bienvenida");
+        }
+    </script>
+</body>
+</html>

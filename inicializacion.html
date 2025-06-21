@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Script</title>
+</head>
+
+<script>
+    window.addEventListener("load", inicializar);
+    function inicializar() {
+        document.getElementById("parrafo1").style.color = "red";
+    }
+    document.addEventListener("DOMContentLoaded", inicializaraño);
+    function inicializaraño() {
+        document.getElementById("año").value = new Date().getFullYear();
+    }
+</script>
+
+<body>
+    <h1>La colocacion del script importa</h1>
+    <p id="parrafo1">Este es un parrafo que se modificará con Javascript.</p>
+    <p>Este es otro parrafo que no se modificara con Javascript.</p>
+    <p>Este es un tercer parrafo que tampoco se modificara con Javascript.</p>
+    
+    Año: <input type="text" id="año"/>
+</body>
+
+
+</html>
